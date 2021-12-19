@@ -18,7 +18,7 @@ class HomeLayout extends StatelessWidget {
         var cubit = NewsCubit.get(context);
         return Scaffold(
           appBar: AppBar(
-            title: Text('News App'),
+            title:const Text('News App'),
             actions: [IconButton(onPressed: (){
               navigateTo(context, SearchScreen());
             }, icon:const Icon(Icons.search) ),

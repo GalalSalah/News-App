@@ -24,7 +24,7 @@ class UsersScreen extends StatelessWidget {
       ),
       body: ListView.separated(
           itemBuilder: (context, i) => buildUser(users[i]),
-          separatorBuilder: (context, i) =>  Padding(
+          separatorBuilder: (context, i) =>  const Padding(
             padding:  EdgeInsetsDirectional.only(start: 20,end: 20),
             child: Divider(
                   thickness: 1,
@@ -44,7 +44,7 @@ class UsersScreen extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: Text(
                 '${user.id}',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
             SizedBox(width: 10,),
@@ -53,12 +53,12 @@ class UsersScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children:  [
                 Text(
-                  '${user.name}',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  user.name,
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  '${user.phone}',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  user.phone,
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
             ),

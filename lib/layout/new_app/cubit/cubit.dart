@@ -34,11 +34,6 @@ class NewsCubit extends Cubit<NewsAppState> {
           Icons.science,
         ),
         label: 'Science'),
-    // const BottomNavigationBarItem(
-    //     icon: Icon(
-    //       Icons.settings,
-    //     ),
-    //     label: 'Settings'),
   ];
 
   void changeBottomNavBar(int index) {
