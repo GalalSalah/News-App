@@ -1,17 +1,14 @@
 import 'package:bloc/bloc.dart';
-
 import 'package:flutter/material.dart';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:news_app/shared/bloc_observe.dart';
-import 'package:news_app/shared/cubit_todo/cubit.dart';
-import 'package:news_app/shared/cubit_todo/status.dart';
 import 'package:news_app/shared/network/local/cash_helper.dart';
 import 'package:news_app/shared/network/remote/dio.dart';
 import 'package:news_app/shared/style/theme.dart';
 import 'layout/new_app/cubit/cubit.dart';
 import 'layout/new_app/home_layout/home.dart';
+import 'layout/new_app/theme_cubit/cubit.dart';
+import 'layout/new_app/theme_cubit/status.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
